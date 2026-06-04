@@ -47,7 +47,7 @@ Os Serviços de IA de conteúdo da AEM são compatíveis com dois métodos de au
 
    >[!NOTE]
    >
-   >Se o cartão de API for desativado com uma mensagem &quot;Licença necessária&quot;, o ambiente do AEM as a Cloud Service pode não ser modernizado. Consulte [Modernização do ambiente do AEM as a Cloud Service](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/aem-apis/openapis/setup#modernization-of-aem-as-a-cloud-service-environment).
+   >Se o cartão de API for desativado com uma mensagem &quot;Licença necessária&quot;, o ambiente do AEM as a Cloud Service pode não ser modernizado. Consulte [Modernização do ambiente do AEM as a Cloud Service](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/cloud-service/aem-apis/openapis/setup#modernization-of-aem-as-a-cloud-service-environment).
 
 1. Na caixa de diálogo **[!UICONTROL Configurar API]**, selecione a autenticação de **[!UICONTROL Servidor para Servidor]**.
 

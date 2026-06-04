@@ -23,7 +23,7 @@ Este guia aborda a configuração de Fontes de IA de conteúdo no Cloud Manager,
 Antes de começar, verifique se as seguintes condições foram atendidas:
 
 * Você tem um programa ativo do Cloud Manager com pelo menos um ambiente do AEM as a Cloud Service.
-* Você tem a função de **[Administrador do Sistema](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-admin-console/admin-roles)** no Admin Console para o programa.
+* Você tem a função de **[Administrador do Sistema](https://experienceleague.adobe.com/pt-br/docs/support-resources/adobe-support-tools-guide/adobe-admin-console/admin-roles)** no Admin Console para o programa.
 * O perfil de produto do ambiente foi provisionado no **Adobe Admin Console**, consulte [Configurar um Projeto do Adobe Developer Console](setup-adc-project.md).
 
 ## Etapa 1 - Abrir a guia Configuração da IA de conteúdo {#open-tab}
