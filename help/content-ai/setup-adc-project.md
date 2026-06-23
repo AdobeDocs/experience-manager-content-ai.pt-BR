@@ -6,9 +6,9 @@ role: Developer, Admin
 level: Beginner
 solution: Experience Manager
 keywords: AEM Content AI, Adobe Developer Console, autenticação, servidor para servidor, chave de API, token de acesso
-source-git-commit: 445aeafe64eb8a68d0770c1f1afb54d68e0b054f
+source-git-commit: 2ff1bbdd3ff224e2a6b389243c78af5fd228d5ee
 workflow-type: tm+mt
-source-wordcount: '674'
+source-wordcount: '714'
 ht-degree: 0%
 
 ---
@@ -27,6 +27,7 @@ Antes de começar, verifique o seguinte:
 * Você tem acesso ao [Adobe Developer Console](https://developer.adobe.com/console/) para sua organização.
 * Você foi adicionado como um **Desenvolvedor** no perfil de produto dos Serviços de IA de Conteúdo da AEM no **Adobe Admin Console**. Sem essa função, o cartão de API dos **[!UICONTROL Serviços AEM Content AI]** aparece desabilitado e a opção de autenticação de **[!UICONTROL Servidor para Servidor]** está oculta.
 * Você sabe os números do programa e do ambiente para o perfil de produto que deseja selecionar (por exemplo, `AEM User - publish - Program 12345 - Environment 67890`).
+* Você tem a função de **[Administrador do Sistema](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-admin-console/admin-roles)** no Admin Console para o programa. Essa função permite gerenciar perfis de produtos e atribuir usuários ao ambiente.
 
 ## Escolha um método de autenticação {#choose-auth}
 
@@ -47,7 +48,7 @@ Os Serviços de IA de conteúdo da AEM são compatíveis com dois métodos de au
 
    >[!NOTE]
    >
-   >Se o cartão de API for desativado com uma mensagem &quot;Licença necessária&quot;, o ambiente do AEM as a Cloud Service pode não ser modernizado. Consulte [Modernização do ambiente do AEM as a Cloud Service](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/cloud-service/aem-apis/openapis/setup#modernization-of-aem-as-a-cloud-service-environment).
+   >Se o cartão de API for desativado com uma mensagem &quot;Licença necessária&quot;, o ambiente do AEM as a Cloud Service pode não ser modernizado. Consulte [Modernização do ambiente do AEM as a Cloud Service](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/aem-apis/openapis/setup#modernization-of-aem-as-a-cloud-service-environment).
 
 1. Na caixa de diálogo **[!UICONTROL Configurar API]**, selecione a autenticação de **[!UICONTROL Servidor para Servidor]**.
 

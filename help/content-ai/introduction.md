@@ -6,9 +6,9 @@ role: Developer, Admin
 level: Beginner
 solution: Experience Manager
 keywords: AEM Content AI, visão geral, fonte de conteúdo, pesquisa semântica, aquisição, Cloud Manager
-source-git-commit: 9b3c63be1aa95339086ee5994cd4dd7cdfa7e746
+source-git-commit: 2ff1bbdd3ff224e2a6b389243c78af5fd228d5ee
 workflow-type: tm+mt
-source-wordcount: '713'
+source-wordcount: '716'
 ht-degree: 0%
 
 ---
@@ -43,7 +43,7 @@ A IA de conteúdo do AEM está estruturada como uma pilha de quatro camadas: cad
 
 *Leia a pilha de baixo para cima - desde o conteúdo confiável na base até as experiências de agente que ele alimenta no topo.*
 
-1. Fontes da IA de conteúdo
+1. Origens de IA de conteúdo
 As Fontes de conteúdo são entidades gerenciadas na IA de conteúdo do AEM que se conectam a um corpo de conteúdo confiável. Um Source de conteúdo pode fazer referência a um tipo de conteúdo governado pela AEM, como ativos, fragmentos de conteúdo, páginas, formulários, metadados e taxonomias, bem como fontes que não sejam da AEM, como sites de terceiros, bases de conhecimento ou portais de documentação. Cada Source de conteúdo é automaticamente vetorizado e semanticamente enriquecido para proporcionar experiências de IA de recuperação de energia, de aterramento e de conversação. Defina as Fontes de conteúdo uma vez e reutilize-as nas APIs da IA de conteúdo com atualização automática integrada.
 
 1. Serviços básicos de IA de conteúdo
@@ -67,7 +67,7 @@ A integração de uma IA de conteúdo funcional envolve duas tarefas:
 
 ### &#x200B;2. Controlar suas fontes de IA de conteúdo {#control}
 
-Configure e gerencie suas Fontes de IA de conteúdo para habilitar experiências baseadas em IA. Consulte [Controlar suas Fontes de conteúdo](contentsources.md).
+Configure e gerencie suas Fontes de IA de conteúdo para habilitar experiências baseadas em IA. Consulte [Controlar suas Fontes de conteúdo](contentsources.md) para obter mais informações.
 
 ## Conheça as APIs da IA de conteúdo  {#apis}
 
