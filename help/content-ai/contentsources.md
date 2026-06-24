@@ -6,9 +6,9 @@ role: Developer, Admin
 level: Beginner
 solution: Experience Manager
 keywords: IA de conteúdo do AEM, Fontes de IA de conteúdo, Aquisição, Cloud Manager, Adobe Developer Console
-source-git-commit: 2ff1bbdd3ff224e2a6b389243c78af5fd228d5ee
+source-git-commit: d40fcb4a41c717ef4e6c82d95a36976b1f4de825
 workflow-type: tm+mt
-source-wordcount: '1225'
+source-wordcount: '1276'
 ht-degree: 0%
 
 ---
@@ -96,11 +96,13 @@ Uma fonte de conteúdo define o site que a IA de conteúdo rastrea e indexa.
 
    ![Lista suspensa de frequência de atualização mostrando as opções disponíveis](../assets/content-ai-onboarding-step-5-1.png)
 
-1. Selecione **[!UICONTROL Criar Source]**.
+1. Selecione **[!UICONTROL Criar Source]**. A aquisição é iniciada automaticamente, e a origem é movida para **Indexação**.
 
-## Etapa 3 - Aquisição do acionador {#trigger-acquisition}
+   ![Lista de Fontes de Conteúdo mostrando a origem recém-criada no status de Indexação](../assets/content-ai-onboarding-step-6.png)
 
-Após a criação da origem, seu status é **Novo**. Execute uma aquisição inicial para iniciar a indexação.
+## Etapa 3 - Executar aquisição novamente {#trigger-acquisition}
+
+A aquisição é executada automaticamente ao criar uma origem e, em seguida, no agendamento definido pela **[!UICONTROL Frequência de atualização]**. Você também pode acionar uma execução manual a qualquer momento - por exemplo, para reindexar imediatamente após a publicação de novo conteúdo.
 
 1. Na lista de origem, selecione o ícone **mais ações** (...) ao lado da origem e selecione **[!UICONTROL Aquisição de acionador]**.
 
@@ -116,7 +118,7 @@ Após o início da aquisição, o status da origem é atualizado em tempo real.
 
 | Status | Significado |
 | --- | --- |
-| **Novo** | Source criado; nenhuma aquisição foi executada ainda. |
+| **Novo** | Source recém-criada; a aquisição automática ainda não começou. Este status é breve. |
 | **Indexando** | Aquisição em andamento; o conteúdo está sendo rastreado e indexado. |
 | **Disponível** | A indexação foi concluída; a origem está pronta para atender às consultas de pesquisa. |
 
@@ -130,15 +132,17 @@ Aguarde o status atingir **Disponível** antes de pesquisar o índice ou testar 
 
 Quando o status da origem for **Disponível**, você poderá executar consultas de pesquisa diretamente da Cloud Manager para verificar se o conteúdo foi indexado corretamente.
 
-1. Na lista de origem, selecione **[!UICONTROL Pesquisar]** ao lado da origem.
+1. Na lista de origem, selecione o ícone **pesquisar** (lupa) ao lado da origem.
 
-   ![Lista de Fontes de Conteúdo com o botão Pesquisar realçado em uma fonte disponível](../assets/content-ai-onboarding-step-13.png)
+   ![Lista de Fontes de Conteúdo com o ícone de pesquisa realçado em uma fonte disponível](../assets/content-ai-onboarding-step-13.png)
 
 1. Insira uma consulta no campo de pesquisa. Os resultados mostram uma lista de itens correspondentes com pontuação de correspondência e tipo de conteúdo (por exemplo, **PÁGINA** ou **PDF**). Selecionar um resultado abre uma visualização à direita.
 
    ![Painel de pesquisa com uma consulta, resultados correspondentes com pontuações correspondentes e um painel de visualização para o resultado principal](../assets/content-ai-onboarding-step-14.png)
 
 ## Modificar ou excluir uma Source {#modify-source}
+
+### Modificar uma origem {#modify}
 
 Para atualizar uma configuração de origem após sua criação:
 
@@ -148,15 +152,19 @@ Para atualizar uma configuração de origem após sua criação:
 
 1. Na caixa de diálogo **[!UICONTROL Modificar Source da IA de Conteúdo]**, atualize a **[!UICONTROL Descrição]**, o **[!UICONTROL Endereço do site]**, o **[!UICONTROL Excluir URLs]** ou a **[!UICONTROL Frequência de atualização]** conforme necessário. O **[!UICONTROL Nome da Configuração da IA de Conteúdo]** é somente leitura e não pode ser alterado.
 
-1. Selecione **[!UICONTROL Salvar]** para aplicar as alterações ou selecione **[!UICONTROL Excluir]** no canto inferior esquerdo da caixa de diálogo para remover a origem completamente.
+   ![Modificar a caixa de diálogo Source da IA de Conteúdo com os campos editáveis destacados](../assets/content-ai-onboarding-step-12.png)
+
+1. Selecione **[!UICONTROL Salvar]** para aplicar as alterações. A lista de origem é atualizada para refletir suas alterações.
+
+### Excluir uma origem {#delete}
+
+1. Na lista de origem, selecione o ícone **mais ações** (...) ao lado da origem e selecione **[!UICONTROL Excluir]**.
 
    >[!WARNING]
    >
    >A exclusão de uma origem é permanente. Todo o conteúdo indexado para essa origem é removido e não pode mais atender às consultas de pesquisa.
 
-   ![Modifique a caixa de diálogo Source da IA de Conteúdo com os campos editáveis realçados e um botão Excluir no canto inferior esquerdo](../assets/content-ai-onboarding-step-12.png)
-
-A lista de origem é atualizada para refletir suas alterações. Se você tiver excluído a origem, ela não aparecerá mais na lista.
+Após a exclusão, a origem não aparecerá mais na lista.
 
 ## Próximas etapas {#next-steps}
 
