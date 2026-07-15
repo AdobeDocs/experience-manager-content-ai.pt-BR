@@ -1,5 +1,5 @@
 ---
-title: Configurar e gerenciar suas fontes de IA de conteúdo
+title: Configurar e gerenciar suas fontes da IA de conteúdo
 description: Saiba como configurar a IA de conteúdo do AEM no Cloud Manager configurando sua primeira fonte de conteúdo e acionando a aquisição.
 topic: Configuration
 role: Developer, Admin
@@ -9,14 +9,14 @@ keywords: IA de conteúdo do AEM, Fontes de IA de conteúdo, Aquisição, Cloud 
 source-git-commit: d40fcb4a41c717ef4e6c82d95a36976b1f4de825
 workflow-type: tm+mt
 source-wordcount: '1276'
-ht-degree: 0%
+ht-degree: 61%
 
 ---
 
 
-# Configurar e gerenciar suas fontes de IA de conteúdo
+# Configurar e gerenciar suas fontes da IA de conteúdo
 
-Este guia aborda a configuração de Fontes de IA de conteúdo no Cloud Manager, desde a reunião de pré-requisitos até a criação de uma fonte de conteúdo e a confirmação da sua indexação e disponibilidade.
+Este guia aborda a configuração de Fontes de IA de conteúdo no Cloud Manager, desde o cumprimento dos pré-requisitos até a criação de uma fonte de conteúdo e a confirmação de que ela está indexada e disponível.
 
 ## Pré-requisitos {#prerequisites}
 
@@ -62,41 +62,41 @@ Se estiver solucionando problemas de acesso ou token, confirme se o usuário foi
 
 ## Etapa 1 - Abrir a guia Configuração da IA de conteúdo {#open-tab}
 
-1. Entre no [Cloud Manager](https://my.cloudmanager.adobe.com/) e selecione seu programa.
+1. Faça logon no [Cloud Manager](https://my.cloudmanager.adobe.com/) e selecione seu programa.
 
-   ![Página inicial da Cloud Manager mostrando o cartão do programa](../assets/content-ai-onboarding-step-1.png)
+   ![Página inicial do Cloud Manager exibindo o cartão do programa](../assets/content-ai-onboarding-step-1.png)
 
 1. Na **[!UICONTROL Visão geral do programa]**, localize a seção **[!UICONTROL Ambientes]** e selecione o ambiente que deseja configurar.
 
-   ![Visão geral do programa com um ambiente de produção realçado](../assets/content-ai-onboarding-step-2.png)
+   ![Visão geral do programa com destaque para o ambiente de produção](../assets/content-ai-onboarding-step-2.png)
 
 1. Na página de detalhes do ambiente, selecione a guia **[!UICONTROL Configuração da IA de conteúdo]**.
 
-   ![Página de detalhes do ambiente com a guia Configuração da IA de conteúdo realçada](../assets/content-ai-onboarding-step-3.png)
+   ![Página de detalhes do ambiente com a guia Configuração da IA de conteúdo destacada](../assets/content-ai-onboarding-step-3.png)
 
-## Etapa 2 - Criar um Source de IA de conteúdo {#create-source}
+## Etapa 2 - Criar uma fonte de IA de conteúdo {#create-source}
 
-Uma fonte de conteúdo define o site que a IA de conteúdo rastrea e indexa.
+Uma fonte de conteúdo define o site que a IA de conteúdo rastreia e indexa.
 
-1. Na guia **[!UICONTROL Configuração da IA de Conteúdo]**, selecione **[!UICONTROL Criar Source]**.
+1. Na guia **[!UICONTROL Configuração da IA de conteúdo]**, selecione **[!UICONTROL Criar fonte]**.
 
-   ![Guia Configuração da IA de conteúdo mostrando o botão Criar Source](../assets/content-ai-onboarding-step-4.png)
+   ![Guia Configuração da IA de conteúdo mostrando o botão Criar fonte](../assets/content-ai-onboarding-step-4.png)
 
-1. Na caixa de diálogo **[!UICONTROL Criar/Adicionar novo Source da IA de conteúdo]**, preencha os campos:
+1. Na caixa de diálogo **[!UICONTROL Criar/adicionar nova fonte da IA de conteúdo]**, preencha os campos:
 
    | Texto | Descrição |
    | --- | --- |
-   | **[!UICONTROL Nome da configuração de IA de conteúdo]** | Um identificador exclusivo para esta origem (por exemplo, `my-site-index`). Não é possível alterar após a criação. |
+   | **[!UICONTROL Nome da configuração da IA de conteúdo]** | Um identificador exclusivo para esta fonte (por exemplo, `my-site-index`). Não pode ser alterado após a criação. |
    | **[!UICONTROL Descrição]** | *(Opcional)* Uma breve descrição da fonte de conteúdo. |
    | **[!UICONTROL Endereço do site]** | A URL raiz do site a ser rastreado (por exemplo, `https://www.example.com/`). |
-   | **[!UICONTROL Excluir URLs]** | *(Opcional)* padrões de URL a serem ignorados durante a rastrea. |
-   | **[!UICONTROL Frequência de atualização]** | Com que frequência a IA de conteúdo rastrea novamente a fonte: Semanalmente, Diariamente, Diariamente 4×, 60 Min ou 15 Min. |
+   | **[!UICONTROL Excluir URLs]** | *(Opcional)* padrões de URL a serem ignorados durante o rastreamento. |
+   | **[!UICONTROL Frequência de atualização]** | Com que frequência a IA de conteúdo rastreia novamente a fonte: semanalmente, diariamente, 4 vezes por dia, a cada 60 minutos ou a cada 15 minutos. |
 
-   ![Caixa de diálogo Criar Source da IA de Conteúdo com os campos de nome e endereço do site preenchidos e o botão Criar Source realçado](../assets/content-ai-onboarding-step-5-0.png)
+   ![Caixa de diálogo Criar fonte da IA de conteúdo com os campos de nome e endereço do site preenchidos e o botão Criar fonte destacado](../assets/content-ai-onboarding-step-5-0.png)
 
    ![Lista suspensa de frequência de atualização mostrando as opções disponíveis](../assets/content-ai-onboarding-step-5-1.png)
 
-1. Selecione **[!UICONTROL Criar Source]**. A aquisição é iniciada automaticamente, e a origem é movida para **Indexação**.
+1. Selecione **[!UICONTROL Criar fonte]**. A aquisição é iniciada automaticamente, e a origem é movida para **Indexação**.
 
    ![Lista de Fontes de Conteúdo mostrando a origem recém-criada no status de Indexação](../assets/content-ai-onboarding-step-6.png)
 
@@ -104,33 +104,33 @@ Uma fonte de conteúdo define o site que a IA de conteúdo rastrea e indexa.
 
 A aquisição é executada automaticamente ao criar uma origem e, em seguida, no agendamento definido pela **[!UICONTROL Frequência de atualização]**. Você também pode acionar uma execução manual a qualquer momento - por exemplo, para reindexar imediatamente após a publicação de novo conteúdo.
 
-1. Na lista de origem, selecione o ícone **mais ações** (...) ao lado da origem e selecione **[!UICONTROL Aquisição de acionador]**.
+1. Na lista de fontes, selecione o ícone **mais ações** (…) ao lado da sua fonte e, em seguida, selecione **[!UICONTROL Acionar aquisição]**.
 
-   ![Lista de origens da IA de conteúdo com o menu de mais ações aberto e aquisição de acionador realçada](../assets/content-ai-onboarding-step-7.png)
+   ![Lista de fontes da IA de conteúdo com o menu de mais ações aberto e Acionar aquisição destacado](../assets/content-ai-onboarding-step-7.png)
 
-1. Na caixa de diálogo **[!UICONTROL Aquisição do acionador]**, examine os detalhes da origem - **[!UICONTROL Fonte de conteúdo]**, **[!UICONTROL Última execução]** e **[!UICONTROL Próxima execução agendada]** - e selecione **[!UICONTROL Acionador]**.
+1. Na caixa de diálogo **[!UICONTROL Acionar aquisição]**, examine os detalhes da fonte - **[!UICONTROL Fonte de conteúdo]**, **[!UICONTROL Última execução]** e **[!UICONTROL Próxima execução agendada]** - e selecione **[!UICONTROL Acionar]**.
 
-   ![Caixa de diálogo de confirmação de Aquisição do gatilho](../assets/content-ai-onboarding-step-8.png)
+   ![Caixa de diálogo de confirmação de acionamento da aquisição](../assets/content-ai-onboarding-step-8.png)
 
 ## Etapa 4 - Monitorar status de indexação {#monitor-status}
 
-Após o início da aquisição, o status da origem é atualizado em tempo real.
+Após o início da aquisição, o status da fonte é atualizado em tempo real.
 
 | Status | Significado |
 | --- | --- |
 | **Novo** | Source recém-criada; a aquisição automática ainda não começou. Este status é breve. |
-| **Indexando** | Aquisição em andamento; o conteúdo está sendo rastreado e indexado. |
-| **Disponível** | A indexação foi concluída; a origem está pronta para atender às consultas de pesquisa. |
+| **Indexação** | Aquisição em andamento; o conteúdo está sendo rastreado e indexado. |
+| **Disponível** | A indexação foi concluída; a fonte está pronta para atender às consultas de pesquisa. |
 
-![Lista de Fontes de Conteúdo mostrando o status de Indexação](../assets/content-ai-onboarding-step-9.png)
+![Lista de Fontes de conteúdo mostrando o status de Indexação](../assets/content-ai-onboarding-step-9.png)
 
-![Lista de Fontes de Conteúdo mostrando o status Disponível](../assets/content-ai-onboarding-step-10.png)
+![Lista de Fontes de conteúdo mostrando o status Disponível](../assets/content-ai-onboarding-step-10.png)
 
-Aguarde o status atingir **Disponível** antes de pesquisar o índice ou testar a API.
+Aguarde até que o status passe para **Disponível** antes de pesquisar no índice ou testar a API.
 
 ## Etapa 5 - Pesquisar conteúdo indexado {#search-content}
 
-Quando o status da origem for **Disponível**, você poderá executar consultas de pesquisa diretamente da Cloud Manager para verificar se o conteúdo foi indexado corretamente.
+Quando o status da fonte estiver **Disponível**, você poderá executar consultas de pesquisa diretamente do Cloud Manager para verificar se o conteúdo foi indexado corretamente.
 
 1. Na lista de origem, selecione o ícone **pesquisar** (lupa) ao lado da origem.
 
@@ -140,21 +140,21 @@ Quando o status da origem for **Disponível**, você poderá executar consultas 
 
    ![Painel de pesquisa com uma consulta, resultados correspondentes com pontuações correspondentes e um painel de visualização para o resultado principal](../assets/content-ai-onboarding-step-14.png)
 
-## Modificar ou excluir uma Source {#modify-source}
+## Modificar ou excluir uma fonte {#modify-source}
 
 ### Modificar uma origem {#modify}
 
-Para atualizar uma configuração de origem após sua criação:
+Para atualizar a configuração de uma fonte após criá-la:
 
-1. Na lista de origem, selecione o ícone **mais ações** (...) ao lado da origem e selecione **[!UICONTROL Editar]**.
+1. Na lista de fontes, selecione o ícone **mais ações** (...) ao lado da fonte e selecione **[!UICONTROL Editar]**.
 
-   ![Lista de Fontes de Conteúdo com o menu de mais ações aberto e a opção Editar realçada](../assets/content-ai-onboarding-step-11.png)
+   ![Lista de Fontes de conteúdo com o menu de mais ações aberto e a opção Editar destacada](../assets/content-ai-onboarding-step-11.png)
 
-1. Na caixa de diálogo **[!UICONTROL Modificar Source da IA de Conteúdo]**, atualize a **[!UICONTROL Descrição]**, o **[!UICONTROL Endereço do site]**, o **[!UICONTROL Excluir URLs]** ou a **[!UICONTROL Frequência de atualização]** conforme necessário. O **[!UICONTROL Nome da Configuração da IA de Conteúdo]** é somente leitura e não pode ser alterado.
+1. Na caixa de diálogo **[!UICONTROL Modificar fonte da IA de conteúdo]**, atualize o campo **[!UICONTROL Descrição]**, **[!UICONTROL Endereço do site]**, **[!UICONTROL Excluir URLs]** ou **[!UICONTROL Frequência de atualização]**, conforme necessário. O **[!UICONTROL Nome da configuração da IA de conteúdo]** é somente leitura e não pode ser alterado.
 
    ![Modificar a caixa de diálogo Source da IA de Conteúdo com os campos editáveis destacados](../assets/content-ai-onboarding-step-12.png)
 
-1. Selecione **[!UICONTROL Salvar]** para aplicar as alterações. A lista de origem é atualizada para refletir suas alterações.
+1. Selecione **[!UICONTROL Salvar]** para aplicar as alterações. A lista de fontes é atualizada para refletir suas alterações.
 
 ### Excluir uma origem {#delete}
 
@@ -162,17 +162,17 @@ Para atualizar uma configuração de origem após sua criação:
 
    >[!WARNING]
    >
-   >A exclusão de uma origem é permanente. Todo o conteúdo indexado para essa origem é removido e não pode mais atender às consultas de pesquisa.
+   >A exclusão de uma fonte é permanente. Todo o conteúdo indexado para essa fonte é removido e não pode mais atender às consultas de pesquisa.
 
 Após a exclusão, a origem não aparecerá mais na lista.
 
 ## Próximas etapas {#next-steps}
 
-* [Configurar um projeto do Adobe Developer Console](setup-adc-project.md) - Crie o projeto ADC e as credenciais necessárias para chamar a API.
-* [Referência da API da IA de conteúdo](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/contentai/) - Consulte seu conteúdo indexado usando pontos de extremidade de pesquisa semântica, de texto completo ou híbrida.
+* [Configurar um projeto no Adobe Developer Console](setup-adc-project.md) - Crie o projeto no ADC e as credenciais necessárias para chamar a API.
+* [Referência da API da IA de conteúdo](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/contentai/) - Consulte seu conteúdo indexado usando pontos de acesso de pesquisa semântica, de texto completo ou híbrida.
 
 ## Resolução de problemas {#troubleshooting}
 
-* **O Source permanece na [!UICONTROL Indexação] por um período estendido.** Tente realizar a aquisição novamente no menu (...). Se o status não avançar após uma segunda execução, verifique se o **[!UICONTROL endereço do site]** pode ser acessado publicamente e se os padrões **[!UICONTROL Excluir URLs]** não filtram todas as páginas.
-* **O Source retorna para [!UICONTROL Novo] após uma execução.** O rastreador não pôde buscar nenhuma página do URL raiz configurado. Confirme se a URL responde com `200 OK` e se o site não está bloqueando solicitações automatizadas.
-* **[!UICONTROL A Pesquisa] não retorna resultados para uma origem [!UICONTROL Disponível].** Indexação bem-sucedida, mas nenhum conteúdo corresponde à consulta. Tente uma consulta mais ampla ou verifique se os URLs rastreados incluem as páginas esperadas.
+* **A fonte permanece na [!UICONTROL Indexação] por um período estendido.** Tente realizar a aquisição novamente no menu (...). Se o status não avançar após uma segunda execução, verifique se o **[!UICONTROL endereço do site]** pode ser acessado publicamente e se os padrões **[!UICONTROL Excluir URLs]** não filtram todas as páginas.
+* **A fonte retorna para [!UICONTROL Novo] após uma execução.** O rastreador não pôde buscar nenhuma página do URL raiz configurado. Confirme se o URL responde com `200 OK` e se o site não está bloqueando solicitações automatizadas.
+* **[!UICONTROL Pesquisar] não retorna resultados para uma fonte [!UICONTROL Disponível].** Indexação bem-sucedida, mas nenhum conteúdo corresponde à consulta. Tente uma consulta mais ampla ou verifique se os URLs rastreados incluem as páginas esperadas.
