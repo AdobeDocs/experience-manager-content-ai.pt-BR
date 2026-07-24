@@ -7,9 +7,9 @@ level: Beginner
 solution: Experience Manager
 keywords: IA de conteúdo do AEM, visão geral, fonte de conteúdo, pesquisa semântica, aquisição, Cloud Manager
 source-git-commit: 2ff1bbdd3ff224e2a6b389243c78af5fd228d5ee
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '885'
-ht-degree: 75%
+ht-degree: 100%
 
 ---
 
@@ -18,8 +18,8 @@ ht-degree: 75%
 
 ## Conteúdo inteligente, pronto para IA desde a concepção {#ai-ready}
 
-Os clientes estão começando a conhecer marcas por meio da IA antes de conhecerem um site. Assistentes de bate-papo, visões gerais de IA, agentes, pesquisa conversacional, Concierges de IA — todos eles recuperam, resumem e representam o conteúdo da marca em nome da marca. O que eles dizem é apenas tão preciso, atual e sobre a marca quanto o conteúdo que podem alcançar.
-É o deslocamento para o qual a IA de conteúdo do AEM é criada. Ele trata o conteúdo da marca como a verdade fundamental sobre a qual as experiências de IA são executadas - e fornece aos clientes do AEM as ferramentas para criar essa verdade fundamental mais rapidamente do lado do autor e fornecê-la claramente às experiências orientadas por IA voltadas para o consumidor no lado da publicação.
+Os clientes estão começando a conhecer marcas por meio da IA antes de acessar um site. Assistentes de chat, visões gerais de IA, agentes, pesquisa conversacional, concierges de IA — todos eles recuperam, resumem e representam o conteúdo da marca em seu nome. O que eles dizem só é tão preciso, atual e consistente com a marca quanto o conteúdo que conseguem acessar.
+Essa é a mudança para a qual a IA de conteúdo do AEM foi criada. Ele trata o conteúdo da marca como a verdade fundamental sobre a qual as experiências de IA são executadas - e fornece aos clientes do AEM as ferramentas para criar essa verdade fundamental mais rapidamente do lado do autor e fornecê-la de forma clara às experiências orientadas por IA voltadas para o consumidor no lado da publicação.
 
 **No lado do autor**, a IA de conteúdo do AEM fundamenta a criação em fontes aprovadas pela marca. A criação assistida por IA, a descoberta em linguagem natural pelo conteúdo, fragmentos e ativos de página existentes, e a geração com reconhecimento de marca permitem que as equipes produzam variações para novos públicos, regiões e canais sem sair do AEM e sem se desviar do que já foi aprovado.
 
@@ -27,10 +27,10 @@ Os clientes estão começando a conhecer marcas por meio da IA antes de conhecer
 
 ### O que isso significa para os clientes do AEM {#what-it-means}
 
-O conteúdo aprovado é a defesa da marca contra alucinações. Quando a IA é fundamentada em conteúdo AEM controlado, as respostas permanecem precisas, atuais e sobre a marca por padrão.
-A criação acompanha a demanda da era da IA. As equipes geram cópias e imagens para mais públicos-alvo e momentos dentro da experiência de criação, extraindo de fontes aprovadas em vez de começar em branco.
-A descoberta funciona da maneira que as pessoas e as máquinas realmente perguntam. A pesquisa em linguagem natural e baseada em intenções entre ativos, fragmentos, páginas e formulários transforma o conteúdo existente em um suprimento reutilizável.
-O Personalization pode ser dimensionado por meio de reutilização, não de duplicação. Os componentes controlados são recombinados em variantes em vez de se multiplicarem em cópias não rastreadas.
+O conteúdo aprovado é a defesa da marca contra alucinações. Quando a IA é fundamentada em conteúdo do AEM controlado, as respostas permanecem precisas, atuais e consistentes com a marca por padrão.
+A criação acompanha a demanda da era da IA. As equipes geram cópias e imagens para mais públicos-alvo e momentos na experiência de criação - utilizando fontes aprovadas em vez de começar do zero.
+A descoberta funciona da maneira como as pessoas e os computadores realmente perguntam. A pesquisa por linguagem natural e baseada em intenção entre ativos, fragmentos, páginas e formulários transforma o conteúdo existente em um recurso reutilizável.
+A personalização dimensiona por meio de reutilização, não de duplicação. Os componentes governados recombinam em variantes, em vez de se multiplicarem em cópias não rastreadas.
 Os canais de publicação agora incluem superfícies de IA. O conteúdo é fornecido em formas que seres humanos, agentes e experiências mediadas por IA podem consumir - sem pipelines separados para cada um.
 
 **O maior ponto: o conteúdo de marca confiável existente é mais valioso agora do que nunca. Cada fragmento, ativo e página aprovado que já está no AEM se torna a verdade básica da qual as experiências orientadas por IA dependem. A IA de conteúdo do AEM é o que torna essa biblioteca reutilizável, detectável e pronta para potencializar o que vem a seguir.**
@@ -67,7 +67,7 @@ A integração de uma IA de conteúdo funcional envolve duas tarefas:
 
 ### &#x200B;2. Controle suas fontes de IA de conteúdo {#control}
 
-Configure e gerencie suas Fontes de IA de conteúdo para habilitar experiências baseadas em IA. Consulte [Controlar suas Fontes de conteúdo](contentsources.md) para obter mais informações.
+Configure e gerencie as Fontes de IA de conteúdo para habilitar experiências baseadas em IA. Consulte [Controle as fontes de conteúdo](contentsources.md) para mais informações.
 
 ## Conheça as APIs da IA de conteúdo  {#apis}
 

@@ -7,9 +7,9 @@ level: Beginner
 solution: Experience Manager
 keywords: IA de conteúdo do AEM, Fontes de IA de conteúdo, Aquisição, Cloud Manager, Adobe Developer Console
 source-git-commit: d40fcb4a41c717ef4e6c82d95a36976b1f4de825
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1276'
-ht-degree: 61%
+ht-degree: 100%
 
 ---
 
@@ -23,33 +23,33 @@ Este guia aborda a configuração de Fontes de IA de conteúdo no Cloud Manager,
 Antes de começar, verifique se as seguintes condições foram atendidas:
 
 * Você tem um programa ativo do Cloud Manager com pelo menos um ambiente do AEM as a Cloud Service.
-* Seu usuário está atribuído ao perfil de produto **Usuários do AEM** para o ambiente de destino, que permite ao usuário exibir fontes de conteúdo.
-* Seu usuário está atribuído ao perfil de produto **Administradores do AEM** para o ambiente de destino, que permite ao usuário criar e editar fontes de conteúdo. O acesso ao Cloud Manager não é suficiente - consulte [Atribuir um usuário a um perfil de produto do AEM](#assign-product-profile) abaixo.
-* O perfil de produto do ambiente foi provisionado em **Adobe Admin Console**.
+* O usuário está atribuído ao perfil de produto **Usuários do AEM** no ambiente de destino, o que permite visualizar fontes de conteúdo.
+* O usuário está atribuído ao perfil de produto **Administradores do AEM** no ambiente de destino, o que permite criar e editar fontes de conteúdo. Somente o acesso ao Cloud Manager não é suficiente – consulte [Atribuir um usuário a um perfil de produto do AEM](#assign-product-profile) abaixo.
+* O perfil de produto do ambiente foi provisionado no **Adobe Admin Console**.
 
 ## Atribuir um usuário a um perfil de produto do AEM {#assign-product-profile}
 
-Use este procedimento para conceder a um usuário acesso ao [!DNL Adobe Experience Manager] as a Cloud Service para um ambiente específico. Atribua o perfil que corresponda ao acesso de que o usuário precisa:
+Use este procedimento para conceder a um usuário acesso ao [!DNL Adobe Experience Manager] as a Cloud Service para um ambiente específico. Atribua o perfil que corresponde ao acesso de que o usuário precisa:
 
 * **[!UICONTROL Usuários do AEM]** - exibir fontes de conteúdo.
-* **[!UICONTROL Administradores do AEM]** - crie e edite fontes de conteúdo.
+* **[!UICONTROL Administradores do AEM]** - criar e editar fontes de conteúdo.
 
 >[!NOTE]
 >
->Os usuários devem pertencer a um perfil de produto do AEM, como **[!UICONTROL Usuários do AEM]** ou **[!UICONTROL Administradores do AEM]**, para acessar o AEM. O acesso ao Cloud Manager não é suficiente.
+>Os usuários devem pertencer a um perfil de produto, como **[!UICONTROL Usuários do AEM]** ou **[!UICONTROL Administradores do AEM]**, para acessar o AEM. Somente o acesso ao Cloud Manager não é suficiente.
 
-Para atribuir esses perfis, você deve ser um administrador do sistema com o perfil de produto [!UICONTROL Proprietário da empresa] do Cloud Manager. Tenha o nome do usuário e o endereço de email prontos.
+Para atribuir esses perfis, é necessário ser admin de sistema no perfil de produto [!UICONTROL Proprietário da empresa] no Cloud Manager. Tenha o nome do usuário e o endereço de email prontos.
 
-1. Em [Cloud Manager](https://my.cloudmanager.adobe.com/), navegue até o seu programa e selecione **[!UICONTROL Gerenciar Acesso]** para o ambiente de destino. Uma nova guia abre [!DNL Adobe Admin Console] para esse ambiente.
+1. No [Cloud Manager](https://my.cloudmanager.adobe.com/), navegue até o programa e selecione **[!UICONTROL Gerenciar acesso]** para o ambiente de destino. Uma nova guia abre o [!DNL Adobe Admin Console] para o ambiente.
 1. Selecione o perfil de produto **[!UICONTROL Usuários do AEM]** ou **[!UICONTROL Administradores do AEM]** para a camada **publicar** - por exemplo, `AEM Administrators - publish - Program 12345 - Environment 67890`. A IA de conteúdo indexa o conteúdo publicado, portanto, o perfil deve ser atribuído no nível de publicação, não no de criação.
-1. Selecione **[!UICONTROL Adicionar Usuário]**.
-1. Insira o nome do usuário e o endereço de email e salve a alteração. O usuário é adicionado ao perfil do produto.
+1. Selecione **[!UICONTROL Adicionar usuário]**.
+1. Insira o nome do usuário e o endereço de email e salve a alteração. O usuário é adicionado ao perfil de produto.
 
-Repita essas etapas para cada ambiente em que o usuário precisa de acesso, como desenvolvimento, armazenamento temporário ou produção.
+Repita essas etapas para cada ambiente em que o usuário precisa de acesso, como desenvolvimento, preparo ou produção.
 
 >[!CAUTION]
 >
->Não edite nem exclua os perfis de produto padrão denominados **[!UICONTROL Administradores do AEM]** ou **[!UICONTROL Usuários do AEM]**. Renomear **[!UICONTROL Administradores do AEM]** remove os direitos de administrador de todos os atribuídos a ele.
+>Não edite nem exclua os perfis de produto padrão com os nomes **[!UICONTROL Administradores do AEM]** ou **[!UICONTROL Usuários do AEM]**. Renomear **[!UICONTROL Administradores do AEM]** remove os direitos de administrador de todos os atribuídos a ele.
 
 ### Verificar a atribuição {#verify-assignment}
 
@@ -58,7 +58,7 @@ Para verificar se a atribuição foi bem-sucedida:
 1. No [!DNL Admin Console], reabra o perfil de produto atribuído.
 1. Confirme se o usuário aparece na lista de membros.
 
-Se estiver solucionando problemas de acesso ou token, confirme se o usuário foi adicionado diretamente ao perfil do produto e não somente por meio de um grupo.
+Se estiver solucionando problemas de acesso ou token, confirme se o usuário foi adicionado diretamente ao perfil de produto e não somente por meio de um grupo.
 
 ## Etapa 1 - Abrir a guia Configuração da IA de conteúdo {#open-tab}
 
@@ -96,13 +96,13 @@ Uma fonte de conteúdo define o site que a IA de conteúdo rastreia e indexa.
 
    ![Lista suspensa de frequência de atualização mostrando as opções disponíveis](../assets/content-ai-onboarding-step-5-1.png)
 
-1. Selecione **[!UICONTROL Criar fonte]**. A aquisição é iniciada automaticamente, e a origem é movida para **Indexação**.
+1. Selecione **[!UICONTROL Criar fonte]**. A aquisição é iniciada automaticamente e a fonte é movida para **Indexação**.
 
-   ![Lista de Fontes de Conteúdo mostrando a origem recém-criada no status de Indexação](../assets/content-ai-onboarding-step-6.png)
+   ![Lista de fontes de conteúdo exibindo a nova fonte criada no status de indexação](../assets/content-ai-onboarding-step-6.png)
 
-## Etapa 3 - Executar aquisição novamente {#trigger-acquisition}
+## Etapa 3 - executar novamente a aquisição {#trigger-acquisition}
 
-A aquisição é executada automaticamente ao criar uma origem e, em seguida, no agendamento definido pela **[!UICONTROL Frequência de atualização]**. Você também pode acionar uma execução manual a qualquer momento - por exemplo, para reindexar imediatamente após a publicação de novo conteúdo.
+A aquisição é executada automaticamente ao criar uma fonte e no agendamento definido pela **[!UICONTROL Frequência de atualização]**. Também é possível acionar uma execução manual a qualquer momento - por exemplo, para reindexar imediatamente após a publicação de novo conteúdo.
 
 1. Na lista de fontes, selecione o ícone **mais ações** (…) ao lado da sua fonte e, em seguida, selecione **[!UICONTROL Acionar aquisição]**.
 
@@ -118,7 +118,7 @@ Após o início da aquisição, o status da fonte é atualizado em tempo real.
 
 | Status | Significado |
 | --- | --- |
-| **Novo** | Source recém-criada; a aquisição automática ainda não começou. Este status é breve. |
+| **Novo** | Fonte recém-criada; a aquisição automática ainda não começou. Este status é breve. |
 | **Indexação** | Aquisição em andamento; o conteúdo está sendo rastreado e indexado. |
 | **Disponível** | A indexação foi concluída; a fonte está pronta para atender às consultas de pesquisa. |
 
@@ -132,9 +132,9 @@ Aguarde até que o status passe para **Disponível** antes de pesquisar no índi
 
 Quando o status da fonte estiver **Disponível**, você poderá executar consultas de pesquisa diretamente do Cloud Manager para verificar se o conteúdo foi indexado corretamente.
 
-1. Na lista de origem, selecione o ícone **pesquisar** (lupa) ao lado da origem.
+1. Na lista de fontes, selecione o ícone de **pesquisa** (lupa) ao lado da sua fonte.
 
-   ![Lista de Fontes de Conteúdo com o ícone de pesquisa realçado em uma fonte disponível](../assets/content-ai-onboarding-step-13.png)
+   ![Lista de fontes de conteúdo com o ícone de pesquisa realçado em uma fonte disponível](../assets/content-ai-onboarding-step-13.png)
 
 1. Insira uma consulta no campo de pesquisa. Os resultados mostram uma lista de itens correspondentes com pontuação de correspondência e tipo de conteúdo (por exemplo, **PÁGINA** ou **PDF**). Selecionar um resultado abre uma visualização à direita.
 
@@ -142,7 +142,7 @@ Quando o status da fonte estiver **Disponível**, você poderá executar consult
 
 ## Modificar ou excluir uma fonte {#modify-source}
 
-### Modificar uma origem {#modify}
+### Modificar uma fonte {#modify}
 
 Para atualizar a configuração de uma fonte após criá-la:
 
@@ -152,19 +152,19 @@ Para atualizar a configuração de uma fonte após criá-la:
 
 1. Na caixa de diálogo **[!UICONTROL Modificar fonte da IA de conteúdo]**, atualize o campo **[!UICONTROL Descrição]**, **[!UICONTROL Endereço do site]**, **[!UICONTROL Excluir URLs]** ou **[!UICONTROL Frequência de atualização]**, conforme necessário. O **[!UICONTROL Nome da configuração da IA de conteúdo]** é somente leitura e não pode ser alterado.
 
-   ![Modificar a caixa de diálogo Source da IA de Conteúdo com os campos editáveis destacados](../assets/content-ai-onboarding-step-12.png)
+   ![Caixa de diálogo Modificar fonte da IA de conteúdo com os campos editáveis destacados](../assets/content-ai-onboarding-step-12.png)
 
 1. Selecione **[!UICONTROL Salvar]** para aplicar as alterações. A lista de fontes é atualizada para refletir suas alterações.
 
-### Excluir uma origem {#delete}
+### Excluir uma fonte {#delete}
 
-1. Na lista de origem, selecione o ícone **mais ações** (...) ao lado da origem e selecione **[!UICONTROL Excluir]**.
+1. Na lista de fontes, selecione o ícone **mais ações** (...) ao lado da fonte e escolha **[!UICONTROL Excluir]**.
 
    >[!WARNING]
    >
    >A exclusão de uma fonte é permanente. Todo o conteúdo indexado para essa fonte é removido e não pode mais atender às consultas de pesquisa.
 
-Após a exclusão, a origem não aparecerá mais na lista.
+Após a exclusão, a fonte não aparecerá mais na lista.
 
 ## Próximas etapas {#next-steps}
 
