@@ -6,7 +6,18 @@ role: Developer, Admin
 level: Beginner
 solution: Experience Manager
 keywords: IA de conteúdo do AEM, Fontes de IA de conteúdo, Aquisição, Cloud Manager, Adobe Developer Console
-source-git-commit: d8bd542a6a2d7e467b0d50e022f1e019d6f5b5ff
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
+source-git-commit: 1364d35876ef0fcc502a3d02f8025ee7df067daf
 workflow-type: tm+mt
 source-wordcount: '1671'
 ht-degree: 76%
@@ -52,10 +63,10 @@ Para criar programas durante a integração inicial, o administrador do sistema 
 
 Para obter mais informações, consulte:
 
-* [Atribuir membros da equipe aos perfis de produto do Cloud Manager](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-cloud-manager)
+* [Atribuir membros da equipe aos perfis de produto do Cloud Manager](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-cloud-manager)
 * [Acessar o Cloud Manager](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/onboarding/journey/cloud-manager)
-* [Perfis de produto e de equipe do AEM as a Cloud Service](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/onboarding/concepts/aem-cs-team-product-profiles)
-* [Adicionar usuários e funções](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-manager/content/requirements/users-and-roles)
+* [Perfis de produto e de equipe do AEM as a Cloud Service](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/concepts/aem-cs-team-product-profiles)
+* [Adicionar usuários e funções](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/requirements/users-and-roles)
 
 ## Atribuir um usuário a um perfil de produto do AEM {#assign-product-profile}
 
