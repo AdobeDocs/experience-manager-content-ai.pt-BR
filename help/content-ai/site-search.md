@@ -20,30 +20,30 @@ level_v2:
 source-git-commit: 1364d35876ef0fcc502a3d02f8025ee7df067daf
 workflow-type: tm+mt
 source-wordcount: '1458'
-ht-degree: 77%
+ht-degree: 100%
 ---
 
 # Comece a usar a Pesquisa com IA de Conteúdo do AEM
 
-A pesquisa tradicional no site compara as palavras digitadas pelo visitante com as palavras do seu conteúdo. Isso funciona bem quando os visitantes usam a mesma terminologia do conteúdo. Ela falha quando eles fazem uma pergunta, expressam uma intenção ou expressam coisas de forma diferente. A pesquisa é um dos sinais mais claros da intenção do visitante em um site, portanto, uma correspondência malsucedida geralmente significa uma jornada malsucedida: o conteúdo não é descoberto, o engajamento diminui e as conversões são perdidas. Os visitantes esperam cada vez mais que a pesquisa entenda o que eles significam, não apenas o que digitaram. A mesma fundação atenta à intenção também torna possíveis respostas geradoras.
+A pesquisa tradicional no site compara as palavras digitadas pelo visitante com as palavras do seu conteúdo. Isso funciona bem quando os visitantes usam a mesma terminologia do conteúdo. Ela falha quando eles fazem uma pergunta, expressam uma intenção ou formulam as coisas de maneira diferente. A pesquisa é um dos sinais mais claros da intenção do visitante em um site, portanto, uma correspondência malsucedida geralmente significa uma jornada malsucedida: o conteúdo não é descoberto, o engajamento diminui e as conversões são perdidas. Os visitantes esperam cada vez mais que a pesquisa entenda o que eles querem dizer, não apenas o que digitaram. Essa mesma base sensível à intenção também torna possíveis respostas generativas.
 
 A Pesquisa com IA de conteúdo do AEM não substitui a experiência de pesquisa do seu site. Ela a aprimora, passando da correspondência de palavras-chave à compreensão do significado e da intenção, para responder diretamente às perguntas. A pesquisa semântica adiciona uma recuperação orientada pela intenção à sua experiência de pesquisa existente, apresentando conteúdo relevante mesmo quando uma consulta não contém as palavras exatas do conteúdo. A Pesquisa generativa se baseia nessa mesma estrutura de recuperação para produzir respostas contextuais e geradas com base no próprio conteúdo do site — uma etapa distinta, não a mesma coisa que a recuperação semântica.
 
-Para os visitantes, isso significa maior relevância, suporte à linguagem natural, menos pesquisas sem resultado e respostas mais rápidas. Para sua empresa, isso significa uma correspondência melhor com a intenção, uma descoberta de conteúdo mais eficiente e uma base de pesquisa pronta para IA, sem precisar reconstruir sua experiência de pesquisa do zero. E, para sua equipe, é uma atualização incremental: seu componente de pesquisa existente pode mudar de léxico, semântico, para recursos geradores passo a passo, em vez de exigir uma nova implementação.
+Para os visitantes, isso significa maior relevância, suporte à linguagem natural, menos pesquisas sem resultado e respostas mais rápidas. Para sua empresa, isso significa uma correspondência melhor com a intenção, uma descoberta de conteúdo mais eficiente e uma base de pesquisa pronta para IA, sem precisar reconstruir sua experiência de pesquisa do zero. E, para sua equipe, é uma atualização incremental: seu componente de pesquisa existente pode evoluir da capacidade lexical para a semântica e, depois, para os recursos generativos, passo a passo, em vez de exigir uma nova implementação.
 
-Para chegar lá, você toma duas decisões: como o conteúdo é incluído na IA de conteúdo e qual componente o traz para os visitantes. Para fornecer aos visitantes resultados relevantes e respostas baseadas em intenções, conecte seu conteúdo e adicione um componente de pesquisa a uma página.
+Para chegar lá, você toma duas decisões: como seu conteúdo chega à IA de conteúdo e qual componente o leva aos visitantes. Para fornecer aos visitantes resultados relevantes e respostas baseadas em intenções, conecte seu conteúdo e adicione um componente de pesquisa a uma página.
 
 ## Pré-requisitos {#prerequisites}
 
 Antes de começar, verifique se as seguintes condições foram atendidas:
 
 * Você tem um programa ativo do Cloud Manager com pelo menos um ambiente do AEM as a Cloud Service.
-* Seu usuário está atribuído ao perfil de produto **[!UICONTROL Usuários do AEM]** (para exibir fontes de conteúdo) e/ou **[!UICONTROL Administradores do AEM]** (para criá-los e editá-los) nos níveis do **autor** e do **publicação**. Consulte [Atribua um usuário a um perfil de produto do AEM](contentsources.md#assign-product-profile) para ver o procedimento completo.
+* Seu usuário está atribuído ao perfil de produto **[!UICONTROL Usuários do AEM]** (para visualizar origens de conteúdo) e/ou **[!UICONTROL Administradores do AEM]** (para criá-las e editá-las) tanto no nível **de autoria** quanto no nível **de publicação**. Consulte [Atribua um usuário a um perfil de produto do AEM](contentsources.md#assign-product-profile) para ver o procedimento completo.
 * O perfil de produto do ambiente foi provisionado no **Adobe Admin Console**.
 
 >[!NOTE]
 >
->Somente o acesso ao Cloud Manager não é suficiente. Um usuário também precisa de um perfil de produto do AEM atribuído aos níveis de criação e publicação para exibir ou gerenciar fontes de conteúdo.
+>Somente o acesso ao Cloud Manager não é suficiente. Além disso, um usuário precisa ter um perfil de produto do AEM atribuído tanto à camada de criação quanto à camada de publicação para visualizar ou gerenciar fontes de conteúdo.
 
 ## Etapa 1a — Conectar um índice existente {#option-a}
 
@@ -61,7 +61,7 @@ Os índices de repositórios existentes aparecem automaticamente na lista Fonte 
 
 >[!NOTE]
 >
->Use esse caminho se já tiver um índice com o conteúdo do site, como o conteúdo da página. Use esse índice em vez de configurar um mecanismo de rastreamento separado.
+>Use este caminho se você já tiver um índice com o conteúdo do seu site, como o conteúdo da sua página. Use esse índice em vez de configurar um mecanismo de rastreamento separado.
 
 ## Etapa 1b - Rastrear um site {#option-b}
 
@@ -86,11 +86,11 @@ Use esse caminho se ainda não tiver um índice de pesquisa para o site. O próp
    | **Indexação** | Rastreamento e indexação em andamento. |
    | **Disponível** | Indexação concluída — pronto para atender consultas de pesquisa. |
 
-1. Para confirmar se o conteúdo foi indexado corretamente, selecione o ícone **pesquisar** ao lado da origem e execute uma consulta de teste.
+1. Para confirmar se o seu conteúdo foi indexado corretamente, selecione o ícone **pesquisar** ao lado da origem e execute uma consulta de teste.
 
 >[!CAUTION]
 >
->Se uma origem permanecer na **[!UICONTROL Indexação]**, tente adquirir novamente no menu (...) primeiro. Se ainda assim não avançar, confirme se o endereço do site está acessível publicamente e se os padrões **[!UICONTROL Excluir URLs]** não estão filtrando todas as páginas.
+>Se uma origem permanecer na **[!UICONTROL Indexação]**, tente adquirir novamente no menu (…) primeiro. Se ainda assim não avançar, confirme se o endereço do site está acessível publicamente e se os padrões **[!UICONTROL Excluir URLs]** não estão filtrando todas as páginas.
 
 ## Etapa 2 — Escolher um componente de pesquisa {#choose-component}
 
@@ -108,15 +108,15 @@ Há dois componentes que podem adicionar pesquisa a uma página, desenvolvidos c
 Se o seu site já usa o componente clássico de Pesquisa rápida do [!DNL AEM], a v3 adiciona uma opção de aceitação da **Pesquisa com IA** para que os visitantes possam ativá-la; não é necessário um novo componente, proxy ou fonte de conteúdo.
 
 * A pesquisa continua sendo executada pelo mesmo caminho JCR/QueryBuilder de hoje — nada muda no servlet de resultados nem na forma como os resultados são renderizados.
-* Quando um visitante ativa a alternância, o componente prefixa a consulta com um marcador especial que o direciona para a correspondência semântica em vez de pesquisa de texto completo por palavra-chave simples.
-* Este caminho não tem um resumo de resposta generativo. Isso melhora a qualidade de correspondência da lista de resultados existente; não adiciona uma resposta de IA generativa.
+* Quando o visitante ativa o botão de alternância o componente adiciona um marcador especial à consulta para direcioná-la à correspondência semântica, em vez da pesquisa de texto completo por palavra-chave simples.
+* Este caminho não possui um resumo de respostas generativas. Isso melhora a qualidade de correspondência da lista de resultados existente; não adiciona uma resposta de IA generativa.
 * **A Etapa 1 (integração da IA de conteúdo) não se aplica a este caminho.** Não há nenhuma Fonte de conteúdo para criar ou conectar — este componente consulta diretamente o índice de páginas existente.
 
 >[!NOTE]
 >
 >Se a pesquisa semântica não estiver funcionando como esperado depois de habilitar o botão de alternância, gere um tíquete de suporte.
 
-Use esse caminho se desejar uma atualização de pesquisa semântica incremental sem adotar um novo componente ou Fonte de conteúdo. Esse não é o caminho correto se você deseja a experiência de resposta gerativa; use a Pesquisa com IA de conteúdo do AEM para isso.
+Utilize esse caminho se desejar uma atualização incremental da pesquisa semântica sem adotar um novo componente ou novas Origens de conteúdo. Esse não é o caminho certo se você deseja uma experiência de respostas generativas; para isso, use a Pesquisa com IA de conteúdo do AEM.
 
 ## Pesquisa com IA de conteúdo do AEM {#gensearch}
 
