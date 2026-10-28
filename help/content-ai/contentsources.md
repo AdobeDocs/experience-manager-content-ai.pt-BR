@@ -17,10 +17,10 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: 1364d35876ef0fcc502a3d02f8025ee7df067daf
-workflow-type: ht
+source-git-commit: fb7ec4db1f4d90acc88b594de4c3e4ca720be2df
+workflow-type: tm+mt
 source-wordcount: '1671'
-ht-degree: 100%
+ht-degree: 99%
 ---
 
 # Configurar e gerenciar suas fontes da IA de conteúdo
@@ -212,7 +212,7 @@ Após a exclusão, a fonte não aparecerá mais na lista.
 ## Próximas etapas {#next-steps}
 
 * [Configurar um projeto no Adobe Developer Console](setup-adc-project.md) - Crie o projeto no ADC e as credenciais necessárias para chamar a API.
-* [Referência da API da IA de conteúdo](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/contentai/) - Consulte seu conteúdo indexado usando pontos de acesso de pesquisa semântica, de texto completo ou híbrida.
+* [Referência da API da IA de conteúdo](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/contentai/) - Consulte seu conteúdo indexado usando pontos de acesso de pesquisa semântica, de texto completo ou híbrida.
 
 ## Resolução de problemas {#troubleshooting}
 
