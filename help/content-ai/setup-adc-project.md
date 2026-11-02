@@ -18,9 +18,9 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
 source-git-commit: fb7ec4db1f4d90acc88b594de4c3e4ca720be2df
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '714'
-ht-degree: 98%
+ht-degree: 100%
 ---
 
 # Configurar um projeto do Adobe Developer Console {#configure-adc-project}
@@ -36,7 +36,7 @@ Antes de começar, verifique o seguinte:
 * Você tem acesso ao [Adobe Developer Console](https://developer.adobe.com/console/) para sua organização.
 * Você foi adicionado como um **Desenvolvedor** no perfil de produto dos Serviços de IA de conteúdo do AEM no **Adobe Admin Console**. Sem essa função, o cartão de API dos **[!UICONTROL Serviços de IA de conteúdo do AEM]** aparece desabilitado e a opção de autenticação de **[!UICONTROL Servidor para servidor]** fica oculta.
 * Você sabe os números do programa e do ambiente para o perfil de produto que deseja selecionar (por exemplo, `AEM User - publish - Program 12345 - Environment 67890`).
-* Você tem a função de **[Administrador do sistema](https://experienceleague.adobe.com/p-br/docs/support-resources/adobe-support-tools-guide/adobe-admin-console/admin-roles)** no Admin Console do programa. Essa função permite gerenciar perfis de produtos e atribuir usuários ao ambiente.
+* Você tem a função de **[Administrador do sistema](https://experienceleague.adobe.com/pt-br/docs/support-resources/adobe-support-tools-guide/adobe-admin-console/admin-roles)** no Admin Console do programa. Essa função permite gerenciar perfis de produtos e atribuir usuários ao ambiente.
 
 ## Escolha um método de autenticação {#choose-auth}
 
